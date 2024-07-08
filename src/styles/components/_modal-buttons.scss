@@ -1,0 +1,43 @@
+.btn-default {
+  outline: none;
+  border-radius: 60px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 11px 20px 8px;
+  font-size: 14px;
+  border: solid 1px #442671;
+  transition: all .3s ease-in-out;
+  background: #442671;
+  color: white;
+}
+
+.btn-default:hover, .btn-default:active {
+  color: #442671;
+  outline: none;
+  transition: all .3s ease-in-out;
+  background-color: transparent;
+}
+
+.btn-default--without-fill {
+  font-family: 'RobotoMono-Regular', 'Arial', sans-serif;
+  background: transparent;
+  border: solid 1px transparent;
+  padding: 11px 20px 8px;
+  color: #75707B;
+  text-decoration: underline;
+  text-transform: capitalize;
+  cursor: pointer;
+  /**
+  May-be needs another helper selector for font-sizes
+   */
+  font-size: 12px;
+}
+
+.btn-default--without-fill:hover {
+  background: transparent;
+  color: black;
+
+}

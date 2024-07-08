@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+       nodejs: 18
+    commands:
+      - npm ci
+  build:
+    commands:
+       - NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production npm run build -- $VUE_MODE
+  post_build:
+    commands:
+       - aws s3 sync dist s3://$PIPELINE_S3 --cache-control 'public,max-age=31536000,immutable' --exclude 'index.html'
+       - aws s3 cp dist/index.html s3://$PIPELINE_S3/index.html --cache-control 'max-age=60'

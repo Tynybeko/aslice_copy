@@ -1,0 +1,130 @@
+.verify-process {
+  .verify-process__badge {
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      top: 50%;
+      border-radius: 5px;
+      left: -60px;
+      transform: translateY(-50%);
+      background: transparent;
+      border: 1px solid #AAA3B1;
+    }
+
+    @media only screen and (max-width: 768px)  {
+      &:before {
+        left: -40px;
+      }
+    }
+  }
+
+  .verify-process__badge.active {
+    &:before {
+      border: solid 1px #31bcb2;
+      background: #31bcb2;
+    }
+  }
+
+  &__navbar {
+    background: #F2F1EF;
+
+    h3 {
+      font-size: 20px;
+      font-family: "Roboto-Mono";
+      padding: 22px 0;
+    }
+    .step-counter-wrapper {
+      border-right: 1px solid #aaa3b1;
+      &__header {
+        color: $mediumGray;
+      }
+    }
+    //.step-counter-wrapper,
+    //.verify-form-header {
+    //  border-bottom: 1px solid #75707B;
+    //}
+
+
+
+    .verify-form-header__title {
+      color: #442671;
+      margin-left: 21px;
+      font-family: "Europa-Regular";
+      font-size: 24px;
+      display: flex;
+      align-items: baseline;
+
+      @media (max-width: 560px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+
+        .page-header-article {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+.additional-information {
+  text-align: right;
+  font-size: 10px;
+  color: #AAA3B1;
+  padding-top: 2px;
+  position: absolute;
+  right: 15px;
+}
+.process2 .v-select {
+  font-size: 12px;
+  font-family: "Roboto-Mono";
+  color: #75707b;
+}
+.process2 .v-select .vs__dropdown-toggle {
+  border: none!important;
+  border-bottom: 1px solid #75707b!important;
+  border-radius: 0!important;
+}
+.process2 .vs--searchable .vs__dropdown-toggle,
+.process4 .vs--searchable .vs__dropdown-toggle {
+  padding: 0!important;
+}
+.process2 .vs--searchable .vs__dropdown-toggle input,
+.process4 .vs--searchable .vs__dropdown-toggle input {
+  padding-bottom: 2px!important;
+  border-bottom: 0!important;
+}
+.process4 .v-select .vs__dropdown-toggle {
+  border-radius: 0;
+}
+
+.mt-3.col-12 input {
+  padding-top: 5px;
+}
+.step-counter {
+  color: #442671;
+  font-family: "Europa-Regular";
+  font-size: 24px;
+
+  @media (max-width: 560px) {
+    font-size: 20px;
+  }
+}
+
+.process-one-right {
+  max-width: initial;
+  @media (max-width: 560px) {
+    max-width: 310px;
+  }
+}
+
+.password-requirements  {
+  @media (max-width: 560px) {
+    font-size: 10px;
+  }
+}

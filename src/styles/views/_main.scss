@@ -1,0 +1,139 @@
+.main {
+  .sidebar-wrapper {
+    max-width: 135px;
+    width: 100%;
+    border-right: 1px solid #75707b;
+    .sidebar {
+      background: #442671;
+      padding: 24px 28px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      overflow-x: hidden;
+      ol {
+        list-style-type: none;
+        padding: 0;
+        li {
+          margin-bottom: 30px;
+          a {
+            color: $mediumGray;
+            border-bottom: 1px solid $mediumGray;
+            text-decoration: none;
+          }
+        }
+      }
+
+      &--promoter {
+        background: var(--Core-Grayscale-900, #616060);
+      }
+    }
+  }
+  &-content-form {
+    .top-navbar {
+      border-bottom: 1px solid $pitchBlack;
+    }
+    .content {
+      padding: 60px 120px;
+      p {
+        font-family: "Gilroy-Medium";
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.25rem;
+        margin-top: 25px;
+        span {
+          color: $lightPurple;
+        }
+      }
+    }
+  }
+  .col-3 {
+    button {
+      outline: none;
+      height: 421px;
+      font-size: 80px;
+      font-family: "Gilroy-Regular";
+      color: white;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+.registration-article {
+  font-size: 13px;
+  color: #75707B;
+  font-family: "Gilroy-Regular";
+  margin-bottom: 8px;
+}
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .main {
+    .col-2 {
+      .content {
+        padding: 30px 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .col-1 {
+      .sidebar {
+        width: unset !important;
+        img {
+          max-width: 70px;
+          width: 100%;
+        }
+      }
+    }
+    .col-2 {
+      .content {
+        padding: 15px;
+      }
+    }
+    .col-3 {
+      button {
+        height: 150px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+.verify-process .form-control,
+.vs__selected {
+  color: #000;
+  font-size: 12px;
+}
+.custom-control-label::before {
+  background-color: transparent;
+  border-color: #75707B;
+  height: 20px;
+  width: 20px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: #31BCB2;
+  border-color: #31BCB2;
+  height: 20px;
+  width: 20px;
+}
+.custom-control-label::after {
+  top: 6px;
+  left: -17px;
+}
+.label-span {
+  margin-left: 17.5px;
+  position: relative;
+  top: -2px;
+}
+
+.text-light-gray {
+  color: $pitchBlack;
+}

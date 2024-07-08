@@ -1,0 +1,44 @@
+.baseText {
+  font-family: "Graphik-Regular-Web", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 10px;
+}
+
+.base {
+  // form field settings
+  &-form {
+    &__title {
+      @extend .baseText;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #442671;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    &__input {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      color: #442671 !important;
+      font-size: 12px !important;
+      font-family: 'Roboto-Mono' !important;
+    }
+
+    &__label-text {
+      @extend .baseText;
+      color: #AAA3B1;
+    }
+
+    &__description-text {
+      font-size: 12px;
+      line-height: 16px;
+      color: #75707B;
+    }
+  }
+
+
+}

@@ -1,0 +1,112 @@
+.btn-rounded {
+  width: 100%;
+  max-width: 325px;
+  border-radius: 60px;
+  border: none;
+  height: 40px;
+  outline: none;
+  font-family: "Roboto-Mono";
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: $darkPurple;
+  transition: 0.2s ease-out;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-rounded__hover {
+  &:hover {
+    background: $darkPurple !important;
+    color: $white !important;
+  }
+}
+
+.btn-rounded-gray__hover {
+  &:hover {
+    background: $lightGray !important;
+    color: $darkPurple !important; 
+  }
+}
+
+.btn-border {
+  max-width: 230px;
+  border: 1px solid $lightGray;
+  background: $white;
+}
+
+.btn-outline {
+  border: 1px solid $pitchBlack;
+  background: $white !important;
+}
+.skip-button {
+  background: transparent;
+  border: none;
+  text-align: center;
+  color: #442671;
+}
+.skip-button span {
+  letter-spacing: 1px;
+}
+.skip-button:hover span {
+  text-decoration: underline;
+}
+
+.as-button-line {
+  display: inline-block;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid var(--Purples-Lt-Purple, #442671);
+  color: var(--Purples-Lt-Purple, #442671);
+  background: none;
+  padding: 0 20px;
+
+  /* Webtext/Button Caps */
+  font-family: Graphik App, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 1.82px;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--Purples-Lt-Purple, #442671);
+    background: var(--White, #fff);
+  }
+
+  &:active {
+    background: var(--Grays-Lt-Gray, #F2F1EF);
+  }
+
+  &--white {
+    border-color: var(--White, #fff);
+    color: var(--White, #fff);
+
+    &:hover {
+      color: var(--Purples-Lt-Purple, #442671);
+    }
+  }
+
+  &--purple-hover {
+    transition: 0.2s ease-out;
+    &:hover {
+      color: var(--Purples-Lt-Purple, #442671);
+      background: #EADDFE;
+    }
+
+    &:active {
+      color: var(--White, #fff);
+      background: var(--Purples-Lt-Purple, #442671);
+    }
+  }
+
+
+  &--disabled, &:disabled {
+    border: 1px solid var(--Grays-MD-Gray, #AAA3B1);
+    color: var(--Grays-MD-Gray, #AAA3B1);
+    background: none;
+  }
+}

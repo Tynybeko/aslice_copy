@@ -1,0 +1,25 @@
+.login-wrapper {
+  height: 100vh;
+  &__header {
+    background: $lightGray;
+    h2 {
+      font-family: "Gilroy-Regular";
+      font-size: 24px;
+      color: $darkPurple;
+    }
+  }
+  &__content {
+    form {
+      p {
+        font-family: "Roboto-Mono", sans-serif;
+        color: $mediumGray;
+        font-size: 12px;
+  font-family: "Roboto-Mono";
+      }
+      input {
+        margin-top: 8px;
+        border-bottom: 1px solid $black !important;
+      }
+    }
+  }
+}

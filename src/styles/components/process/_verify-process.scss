@@ -1,0 +1,121 @@
+.verify-process-main {
+  margin-left: 135px;
+  .process-one {
+    .controller.not-allowed {
+      border: 1px solid #AAA3B1!important;
+      color: white !important;
+      background: #AAA3B1!important;
+    }
+    @extend %min-window-height;
+    &-left__sidebar {
+      border-right: 1px solid #AAA3B1;
+      padding-top: 5px;
+    }
+    &-right {
+      h4 {
+        font-family: "Graphik-Regular-Web", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 10px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #442671;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .process-three {
+    @extend %min-window-height;
+    &-left__sidebar {
+      border-right: 1px solid #AAA3B1;
+      padding-top: 0;
+    }
+    &-right {
+      h4, h3 {
+        font-family: "Europa-Bold";
+        font-size: 9px;
+        color: #442671;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 20px;
+        letter-spacing: 4px;
+        margin-bottom: 5px;
+      }
+      p,
+      label {
+        font-family: "Roboto-Mono";
+        font-size: 12px;
+        color: $mediumGray;
+      }
+      label {
+        padding-top: 3px;
+      }
+    }
+  }
+  .controller {
+    max-width: 160px;
+    // width: 100%;
+    padding: 0 20px;
+    height: 40px;
+    background: white;
+    border-radius: 60px;
+    border: 1px solid #442671;
+    outline: none;
+    transition: 0.3s all ease-out;
+    font-family: "Roboto-Mono" !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #442671;
+    svg {
+      path {
+        fill: #000000;
+      }
+    }
+  }
+  .controller {
+    &:hover {
+      background: #796498 !important;
+      color: white !important;
+      border: 1px solid #796498 !important;
+      font-family: 'Roboto-Mono'!important;
+    }
+  }
+  .next-button {
+    margin-left: 10px;
+    background-color: #442671;
+    color: #fff;
+  }
+}
+.next-step-button:hover {
+  background: #442671 !important;
+  color: white !important;
+  border: 1px solid #442671 !important;
+}
+.main .controller.not-allowed {
+  border: 1px solid #75707b!important;
+  color: #75707b!important;
+  background: #f2f1ef !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .verify-process-main {
+    .process-one {
+      &-left__sidebar {
+        padding-top: 68px;
+      }
+    }
+    .process-three {
+      &-left__sidebar {
+        border-right: 1px solid #000;
+        padding-top: 0;
+      }
+    }
+  }
+
+}

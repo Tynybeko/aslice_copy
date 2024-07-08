@@ -1,0 +1,22 @@
+.signup-wrapper {
+  height: 100vh;
+  &__content {
+    h4 {
+      font-family: "Gilroy-Regular";
+      font-size: 13px;
+      color: $mediumGray;
+      margin-bottom: 18px;
+    }
+    form {
+      p {
+        font-family: "DMMono-Regular", sans-serif;
+        color: $mediumGray;
+        font-size: 12px;
+      }
+      input {
+        margin-top: 8px;
+        border-bottom: 1px solid $black !important;
+      }
+    }
+  }
+}
